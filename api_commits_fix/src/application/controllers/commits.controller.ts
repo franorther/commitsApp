@@ -8,7 +8,7 @@ export class CommitsController {
   constructor(private readonly commitsService: CommitsService) { }
 
   @Get()
-  getCommits(@Query() data: DataEntryGetCommitDTO): Promise<DataOutGetComitstDTO> {
-    return this.commitsService.getCommitsRecord(data);
+  async getCommits(@Query() data: DataEntryGetCommitDTO): Promise<DataOutGetComitstDTO> {
+    return await this.commitsService.getCommitsRecord(data);
   }
 }

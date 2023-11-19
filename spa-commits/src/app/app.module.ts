@@ -8,13 +8,11 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ListDataDynamoComponent } from './components/list-data-dynamo/list-data-dynamo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListDataDynamoComponent,
 
   ],
   imports: [
