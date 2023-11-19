@@ -1,0 +1,118 @@
+<div class="bg-white p-8 rounded-md w-full">
+  <header class="w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
+    <div class="flex items-center justify-center w-full">
+      <div
+        class="flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
+        <h1 class="font-mono text-gray-900">Data extracted from Git Hub Api</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+          width="1.99999in" height="1.99999in" version="1.1"
+          style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+          viewBox="0 0 2000 2000">
+          <defs>
+            <style type="text/css">
+              .fil0 {
+                fill: #333333
+              }
+
+              .fil2 {
+                fill: #67B047
+              }
+
+              .fil1 {
+                fill: #904C2A
+              }
+            </style>
+          </defs>
+          <g id="Layer_x0020_1">
+            <metadata id="CorelCorpID_0Corel-Layer" />
+            <path class="fil0"
+              d="M1509 1853l-902 0c-30,0 -30,-45 0,-45l319 0c-13,-66 -23,-134 -29,-203l0 0c-36,-158 -222,-191 -224,-192 -29,-5 -22,-49 8,-45 7,2 131,24 207,119 -6,-134 -1,-212 3,-339 3,-128 -163,-251 -260,-307 -32,34 -86,34 -128,16 -61,-27 -128,-87 -184,-129 -13,-9 -13,-28 0,-37 121,-82 363,-28 332,109 23,13 66,40 113,76 20,-100 -58,-190 -59,-191 -20,-23 14,-53 34,-30 5,5 107,122 63,253 37,34 73,73 98,116 17,-187 45,-361 72,-500l0 -1c0,-133 -90,-196 -126,-216 -27,22 -66,16 -95,-1 -41,-25 -81,-72 -116,-107 -12,-11 -9,-29 5,-36 92,-46 254,11 230,106 32,18 93,61 126,140 28,-127 50,-206 51,-208 8,-28 50,-18 44,10 -35,185 -45,387 -40,584 35,-82 89,-157 160,-223 -51,-132 183,-219 314,-154 14,7 17,26 6,37 -68,65 -150,173 -238,173 -21,0 -40,-6 -55,-18 -97,91 -158,199 -181,321 7,137 21,269 37,387 25,-47 64,-90 104,-126 -44,-131 58,-249 63,-254 20,-22 54,8 34,30 -1,2 -79,93 -59,192 47,-37 90,-63 113,-77 -31,-137 212,-190 332,-108 13,9 13,28 0,37 -71,52 -162,141 -242,141 -29,0 -54,-10 -70,-29 -28,17 -78,48 -130,92 -66,57 -129,132 -130,211 29,192 60,333 71,381l329 0c30,0 30,45 0,45zm-259 -1316c45,-39 89,-61 120,-74 28,-11 45,31 17,42 -29,12 -72,34 -115,73 60,30 158,-86 202,-131 -92,-22 -226,24 -224,90zm-557 -343c29,29 76,82 111,82 24,0 28,-25 19,-40 -17,-30 -81,-49 -130,-42zm280 1614l161 0c-13,-56 -42,-190 -69,-368 -8,-33 -57,-453 -54,-513 -6,-110 -8,-224 -5,-338 -60,328 -117,812 -33,1219zm566 -826c-65,0 -142,25 -147,73 33,-21 67,-37 103,-49 29,-9 43,34 14,43 -35,12 -69,29 -101,50 55,38 170,-65 218,-102 -25,-10 -55,-15 -87,-15zm-1165 -269c47,38 163,141 218,102 -26,-17 -52,-31 -80,-42 -28,-11 -11,-53 16,-42 28,11 55,24 80,41 -7,-67 -147,-93 -234,-59z" />
+            <g id="_539465568">
+              <path class="fil1" d="M973 1808l27 0 0 -1184c-58,326 -108,791 -27,1184z" />
+              <path class="fil2" d="M804 276c24,0 28,-25 19,-40 -17,-30 -81,-49 -130,-42 29,29 76,82 111,82z" />
+              <path class="fil2"
+                d="M608 772c-7,-67 -147,-93 -234,-59 47,38 163,141 218,102 -26,-17 -52,-31 -80,-42 -28,-11 -11,-53 16,-42 28,11 55,24 80,41z" />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <button (click)="onButtonClick()"
+    class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+    See data storaged in Dynamodb
+  </button>
+  <div>
+    <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+      <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+        <table class="min-w-full leading-normal">
+          <thead>
+            <tr>
+              <th
+                class="text-center px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Author
+              </th>
+              <th
+                class=" text-center px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Commit message
+              </th>
+              <th
+                class="text-center px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Created at
+              </th>
+              <th
+                class="text-center px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                SHA
+              </th>
+              <th
+                class="text-center px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Changes link
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let result of responseRequest, let i = index">
+              <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 w-10 h-10">
+                    <img class="w-full h-full rounded-full" [src]="photo" alt="" />
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      {{result.author}}
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">
+                  {{result.message}}
+                </p>
+              </td>
+              <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">
+                  {{result.date}}
+                </p>
+              </td>
+              <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">
+                  {{result.sha}}
+                </p>
+              </td>
+              <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <button (click)="openExternalPage(result.urlHtml)"
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
