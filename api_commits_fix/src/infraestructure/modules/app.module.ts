@@ -4,10 +4,16 @@ import { CommitsController } from './../../application/controllers';
 import { CommitsService } from '../../domain/services';
 import { GitHubService } from '../config';
 import { Octokit } from 'octokit';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
 
 
 @Module({
-  imports: [],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true
+    }),
+  ],
   controllers: [CommitsController],
   providers: [
     CommitsService,
@@ -17,4 +23,11 @@ import { Octokit } from 'octokit';
     Logger,
   ],
 })
-export class AppModule { }
+export class AppModule { 
+  static port: number;
+
+  constructor(private readonly configService: ConfigService) {
+    AppModule.port = this.configService.get<number>('API_PORT');
+  }
+
+}

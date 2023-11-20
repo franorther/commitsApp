@@ -15,15 +15,19 @@ export class CommitsService {
   async getCommitsRecord(data: DataEntryGetCommitDTO): Promise<any> {
     const { owner, repo } = data;
     try {
-      //Check if the commits exist for the repo and owner received/
-      const commitsRaw = await this.gitHubService.getCommits(owner, repo);
-      if (commitsRaw.length === 0) { throw new HttpException('Commits not found', HttpStatus.NOT_FOUND) };
+      //we check if the commits exist for the repo and owner received/
+      const commits = await this.gitHubService.getCommits(owner, repo);
+      if (commits?.length === 0) { throw new HttpException('Commits not found', HttpStatus.NOT_FOUND) };
       this.logger.log("Data extracted successfully");
-      return commitsRaw;
+      return commits;
       
     } catch (error) {
-      this.logger.error(error);
-      throw error
+      this.logger.error(error, HttpStatus.NOT_FOUND);
+      if (error.status === HttpStatus.NOT_FOUND) {
+        throw new HttpException('Commits not found', HttpStatus.NOT_FOUND);
+      } else {
+        throw new HttpException('Error fetching commits', HttpStatus.INTERNAL_SERVER_ERROR);
+      }
     }
 
   }
