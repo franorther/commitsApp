@@ -8,11 +8,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { AppSettings } from 'appsettings-json-reader';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [
@@ -23,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     CommonModule,
   ],
-  providers: [],
+  providers: [AppSettings],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

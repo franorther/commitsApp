@@ -71,11 +71,11 @@
               <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <div class="flex items-center">
                   <div class="flex-shrink-0 w-10 h-10">
-                    <img class="w-full h-full rounded-full" [src]="photo" alt="" />
+                    <img class="w-full h-full rounded-full" [src]="result.photoProfile" alt="" />
                   </div>
                   <div class="ml-3">
                     <p class="text-gray-900 whitespace-no-wrap">
-                      {{result.author}}
+                      {{result.name}}
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@
                 </p>
               </td>
               <td class="text-center px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                <button (click)="openExternalPage(result.urlHtml)"
+                <button (click)="openExternalPage(result.url)"
                   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

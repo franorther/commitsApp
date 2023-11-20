@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { AppSettings } from 'appsettings-json-reader';
+
 
 
 @Injectable({
@@ -8,14 +10,11 @@ import { Observable } from 'rxjs';
 })
 export class AppService {
 
-  private baseUrlListCommits = "http://localhost:3000/commits/?owner=";
-  private urlForExtactaDataDynamo = "http://localhost:3000/dynamodb-data"
+  appSettings: any = AppSettings.readAppSettings();
   constructor(private httpClient: HttpClient) { }
 
   getDataByRepoAndOWner(userName: string, repo: string): Observable<any> {
-    return this.httpClient.get<any>(`${this.baseUrlListCommits}${userName}&repo=${repo}`);
+    return this.httpClient.get<any>(`${this.appSettings.urlBase}commits/?owner=${userName}&repo=${repo}`);
   }
-  getDataFromDynamo() {
-    return this.httpClient.get<any>(this.urlForExtactaDataDynamo);
-  }
+
 }
