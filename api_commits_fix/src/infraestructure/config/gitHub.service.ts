@@ -21,7 +21,7 @@ export class GitHubService {
                 message: message,
                 name: name,
                 date: date.split("T").shift(),
-                //photoProfile: (await this.octokit.request(`GET /users/${html_url.split("//github.com/").pop().split("/").shift()}`)).data.avatar_url
+                photoProfile: (await this.octokit.request(`GET /users/${html_url.split("//github.com/").pop().split("/").shift()}`)).data.avatar_url
             };
         }));
         this.logger.log('Data extracted for gitHub API successfully');
