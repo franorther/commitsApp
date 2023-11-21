@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppSettings } from 'appsettings-json-reader';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
 
 
   ],
@@ -24,8 +26,9 @@ import { AppSettings } from 'appsettings-json-reader';
     RouterModule,
     HttpClientModule,
     CommonModule,
+    DialogComponent
   ],
-  providers: [AppSettings],
+  providers: [AppSettings, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

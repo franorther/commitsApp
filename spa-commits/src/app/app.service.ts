@@ -14,7 +14,8 @@ export class AppService {
   constructor(private httpClient: HttpClient) { }
 
   getDataByRepoAndOWner(userName: string, repo: string): Observable<any> {
-    return this.httpClient.get<any>(`${this.appSettings.urlBase}commits/?owner=${userName}&repo=${repo}`);
+    const response = this.httpClient.get<any>(`${this.appSettings.urlBase}commits/?owner=${userName}&repo=${repo}`);
+    return response;
   }
 
 }
