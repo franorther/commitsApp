@@ -25,7 +25,6 @@ export class ListCommitsComponent implements OnInit {
 
   ngOnInit() {
     this.appService.getDataByRepoAndOWner(this.owner, this.repo).subscribe((data) => {
-      console.log(data);
       this.responseRequest = data;
     }
     );

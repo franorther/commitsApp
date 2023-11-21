@@ -1,48 +1,53 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="1.99999in" height="1.99999in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2000 2000">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#333333}
+    .fil2 {fill:#67B047}
+    .fil1 {fill:#904C2A}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1509 1853l-902 0c-30,0 -30,-45 0,-45l319 0c-13,-66 -23,-134 -29,-203l0 0c-36,-158 -222,-191 -224,-192 -29,-5 -22,-49 8,-45 7,2 131,24 207,119 -6,-134 -1,-212 3,-339 3,-128 -163,-251 -260,-307 -32,34 -86,34 -128,16 -61,-27 -128,-87 -184,-129 -13,-9 -13,-28 0,-37 121,-82 363,-28 332,109 23,13 66,40 113,76 20,-100 -58,-190 -59,-191 -20,-23 14,-53 34,-30 5,5 107,122 63,253 37,34 73,73 98,116 17,-187 45,-361 72,-500l0 -1c0,-133 -90,-196 -126,-216 -27,22 -66,16 -95,-1 -41,-25 -81,-72 -116,-107 -12,-11 -9,-29 5,-36 92,-46 254,11 230,106 32,18 93,61 126,140 28,-127 50,-206 51,-208 8,-28 50,-18 44,10 -35,185 -45,387 -40,584 35,-82 89,-157 160,-223 -51,-132 183,-219 314,-154 14,7 17,26 6,37 -68,65 -150,173 -238,173 -21,0 -40,-6 -55,-18 -97,91 -158,199 -181,321 7,137 21,269 37,387 25,-47 64,-90 104,-126 -44,-131 58,-249 63,-254 20,-22 54,8 34,30 -1,2 -79,93 -59,192 47,-37 90,-63 113,-77 -31,-137 212,-190 332,-108 13,9 13,28 0,37 -71,52 -162,141 -242,141 -29,0 -54,-10 -70,-29 -28,17 -78,48 -130,92 -66,57 -129,132 -130,211 29,192 60,333 71,381l329 0c30,0 30,45 0,45zm-259 -1316c45,-39 89,-61 120,-74 28,-11 45,31 17,42 -29,12 -72,34 -115,73 60,30 158,-86 202,-131 -92,-22 -226,24 -224,90zm-557 -343c29,29 76,82 111,82 24,0 28,-25 19,-40 -17,-30 -81,-49 -130,-42zm280 1614l161 0c-13,-56 -42,-190 -69,-368 -8,-33 -57,-453 -54,-513 -6,-110 -8,-224 -5,-338 -60,328 -117,812 -33,1219zm566 -826c-65,0 -142,25 -147,73 33,-21 67,-37 103,-49 29,-9 43,34 14,43 -35,12 -69,29 -101,50 55,38 170,-65 218,-102 -25,-10 -55,-15 -87,-15zm-1165 -269c47,38 163,141 218,102 -26,-17 -52,-31 -80,-42 -28,-11 -11,-53 16,-42 28,11 55,24 80,41 -7,-67 -147,-93 -234,-59z"/>
+  <g id="_539465568">
+   <path class="fil1" d="M973 1808l27 0 0 -1184c-58,326 -108,791 -27,1184z"/>
+   <path class="fil2" d="M804 276c24,0 28,-25 19,-40 -17,-30 -81,-49 -130,-42 29,29 76,82 111,82z"/>
+   <path class="fil2" d="M608 772c-7,-67 -147,-93 -234,-59 47,38 163,141 218,102 -26,-17 -52,-31 -80,-42 -28,-11 -11,-53 16,-42 28,11 55,24 80,41z"/>
+  </g>
+ </g>
+</svg>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  <p align="center">Api created for extract info about own commits from a public repo, using AWS Dynamodb for data persintence
+   
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
+<p align="left"> Before starting the application, make sure you have Docker Desktop installed.
+
+
 
 ```bash
 $ npm install
 ```
 
 ## Running the app
+<p align="left">You will find a docker.compose file, this will create an instance of LocalStack in a Docker container to simulate the use of the AWS platform, using DynamoDB for data persistence, rename the .env.example file to .env also.
 
 ```bash
-# development
-$ npm run start
+# Getting up Docker and add Localstack
+$ docker compose up
+```
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```bash
+# Getting up the api
+$ nest start --watch
 ```
 
 ## Test
@@ -50,24 +55,4 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
